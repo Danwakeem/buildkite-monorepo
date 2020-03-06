@@ -1,0 +1,34 @@
+{
+  "name": "apollo",
+  "version": "0.0.1",
+  "description": "A dummy apollo server thing",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Danwakeem/buildkite-monorepo.git"
+  },
+  "keywords": [
+    "buildkite",
+    "apollo",
+    "angular",
+    "react"
+  ],
+  "author": "Danwakeem",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Danwakeem/buildkite-monorepo/issues"
+  },
+  "homepage": "https://github.com/Danwakeem/buildkite-monorepo#readme",
+  "dependencies": {
+    "apollo-server": "^2.11.0",
+    "graphql": "^14.6.0",
+    "lodash": "^4.17.15",
+    "uuid": "^7.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}

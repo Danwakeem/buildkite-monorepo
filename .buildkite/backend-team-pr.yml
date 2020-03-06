@@ -1,0 +1,13 @@
+steps:
+  - label: "Triggering Backend team pipelines"
+    agents:
+      queue: backend-team
+    env:
+      DEBUG: true
+    plugins:
+      chronotc/monorepo-diff#v1.1.1:
+        diff: '.buildkite/scripts/diff.sh ${BUILDKITE_COMMIT}'
+        watch:
+          - path: 'backends/apollo/'
+            config:
+              trigger: 'apollo-pull-request'

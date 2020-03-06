@@ -1,0 +1,9 @@
+steps:
+  - label: Run Apollo PR
+    command:
+      - "echo 'running PR pipeline script'"
+    agents:
+      queue: backend-team-pr
+    plugins:
+      docker-compose#v3.0.3:
+        run: apollo
