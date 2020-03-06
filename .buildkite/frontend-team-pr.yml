@@ -10,7 +10,7 @@ steps:
         watch:
           - path: 'frontends/angular/'
             config:
-              trigger: 'react-pull-request'
+              trigger: 'angular-pr'
           - path: 'frontends/react/'
             config:
-              trigger: 'react-pull-request'
+              trigger: 'react-pr'
