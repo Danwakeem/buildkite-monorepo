@@ -65,6 +65,7 @@ const typeDefs = gql`
   }
 
   type Query {
+    health: Boolean
     book(id: String): Book
     books: [Book]
   }
@@ -76,6 +77,7 @@ const typeDefs = gql`
 
 const resolvers = {
   Query: {
+    health: () => true,
     book: (_, {id}) => find(BOOKS, { id }),
     books: () => BOOKS,
   },
