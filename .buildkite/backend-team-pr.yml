@@ -10,4 +10,4 @@ steps:
         watch:
           - path: 'backends/apollo/'
             config:
-              trigger: 'apollo-pull-request'
+              trigger: 'apollo-pr'
